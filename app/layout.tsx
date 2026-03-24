@@ -31,6 +31,9 @@ export default function RootLayout({
             <a className="hover:text-neutral-900" href="/">
               Home
             </a>
+            <a className="hover:text-neutral-900" href="/works">
+              Works
+            </a>
           </nav>
         </header>
 
