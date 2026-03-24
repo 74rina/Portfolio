@@ -25,7 +25,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <header className="flex h-20 items-center justify-between border-b border-neutral-200 px-6">
+          <p className="text-base font-semibold">ポートフォリオ</p>
+          <nav className="flex items-center gap-4 text-sm text-neutral-600">
+            <a className="hover:text-neutral-900" href="/">
+              Home
+            </a>
+          </nav>
+        </header>
+
+        <main>{children}</main>
+
+        <footer className="flex h-20 items-center justify-center border-t border-neutral-200 px-6 text-sm text-neutral-500">
+          <p>© 2026 骨なしチキン</p>
+        </footer>
       </body>
     </html>
   );
