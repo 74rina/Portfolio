@@ -23,4 +23,48 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+}
+
+.intro-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+  line-height: 1.7;
+}
+
+.intro-title {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+
+.intro-lead {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.intro-section {
+  margin-top: 28px;
+}
+
+.intro-section h2 {
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.intro-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.intro-list li {
+  margin: 6px 0;
+}
+
+.intro-muted {
+  color: #555;
 }
