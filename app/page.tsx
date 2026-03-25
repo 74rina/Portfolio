@@ -1,8 +1,15 @@
 export default function Home() {
   return (
     <div className="intro-wrap">
-      <h1 className="intro-title">自己紹介</h1>
-      <p className="intro-lead">はじめまして、骨なしチキンです！</p>
+      <div className="intro-hero">
+        <div className="intro-hero-text">
+          <h1 className="intro-title">自己紹介</h1>
+          <p className="intro-lead">はじめまして、骨なしチキンです！</p>
+        </div>
+        <div className="intro-hero-photo">
+          <img className="hero-photo" src="/0.png" alt="プロフィール写真" />
+        </div>
+      </div>
 
       <section className="intro-section">
         <h2>取り組んでいること</h2>

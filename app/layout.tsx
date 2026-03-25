@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeToggle from "./ui/theme-toggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,14 +28,17 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header className="flex h-20 items-center justify-between border-b border-neutral-200 px-6">
           <p className="text-base font-semibold">ポートフォリオ</p>
-          <nav className="flex items-center gap-4 text-sm text-neutral-600">
-            <a className="hover:text-neutral-900" href="/">
-              Home
-            </a>
-            <a className="hover:text-neutral-900" href="/works">
-              Works
-            </a>
-          </nav>
+          <div className="flex items-center gap-4">
+            <nav className="flex items-center gap-4 text-sm text-neutral-600">
+              <a className="hover:text-neutral-900" href="/">
+                Home
+              </a>
+              <a className="hover:text-neutral-900" href="/works">
+                Works
+              </a>
+            </nav>
+            <ThemeToggle />
+          </div>
         </header>
 
         <main>{children}</main>
